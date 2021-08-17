@@ -31,7 +31,12 @@ class NoteListState extends State<NoteList> {
 
     Widget myAppBar() {
       return AppBar(
-        title: Text(APP_NAME, style: Theme.of(context).textTheme.headline5),
+        title: Text(APP_NAME, style: Theme.of(context).textTheme.headline6),
+        //title: Row(mainAxisAlignment: MainAxisAlignment.start,
+        //    children:[
+        //      Image.asset('assets/logo_small.png')
+        //    ]
+        //),
         centerTitle: true,
         elevation: 0,
         backgroundColor: Colors.white,
@@ -124,7 +129,7 @@ class NoteListState extends State<NoteList> {
                         padding: const EdgeInsets.all(8.0),
                         child: Text(
                           this.noteList[index].title,
-                          style: Theme.of(context).textTheme.bodyText2,
+                          style: Theme.of(context).textTheme.bodyText1,
                         ),
                       ),
                     ),
@@ -146,7 +151,7 @@ class NoteListState extends State<NoteList> {
                             this.noteList[index].description == null
                                 ? ''
                                 : this.noteList[index].description,
-                            style: Theme.of(context).textTheme.bodyText1),
+                            style: Theme.of(context).textTheme.bodyText2),
                       )
                     ],
                   ),
@@ -155,7 +160,7 @@ class NoteListState extends State<NoteList> {
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: <Widget>[
                       Text(this.noteList[index].date,
-                          style: Theme.of(context).textTheme.subtitle2),
+                          style: Theme.of(context).textTheme.caption),
                     ])
               ],
             ),

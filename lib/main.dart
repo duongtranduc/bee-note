@@ -34,7 +34,7 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
   Widget build(BuildContext context) {
     return SplashScreen(
       useLoader:true,
-      seconds: 2,
+      seconds: 3,
       navigateAfterSeconds: NoteList(),
       //navigateAfterFuture: loadFromFuture(),
       //backgroundColor: Colors.grey,

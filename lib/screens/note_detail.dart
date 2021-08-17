@@ -43,7 +43,7 @@ class NoteDetailState extends State<NoteDetail> {
             elevation: 0,
             title: Text(
               appBarTitle,
-              style: Theme.of(context).textTheme.headline5,
+              style: Theme.of(context).textTheme.headline6,
             ),
             backgroundColor: colors[color],
             leading: IconButton(
@@ -97,7 +97,7 @@ class NoteDetailState extends State<NoteDetail> {
                   child: TextField(
                     controller: titleController,
                     maxLength: 255,
-                    style: Theme.of(context).textTheme.bodyText2,
+                    style: Theme.of(context).textTheme.bodyText1,
                     onChanged: (value) {
                       updateTitle();
                     },
@@ -114,7 +114,7 @@ class NoteDetailState extends State<NoteDetail> {
                       maxLines: 10,
                       maxLength: 255,
                       controller: descriptionController,
-                      style: Theme.of(context).textTheme.bodyText1,
+                      style: Theme.of(context).textTheme.bodyText2,
                       onChanged: (value) {
                         updateDescription();
                       },
@@ -139,10 +139,10 @@ class NoteDetailState extends State<NoteDetail> {
               borderRadius: BorderRadius.all(Radius.circular(10.0))),
           title: Text(
             "Discard Changes?",
-            style: Theme.of(context).textTheme.bodyText2,
+            style: Theme.of(context).textTheme.bodyText1,
           ),
           content: Text("Are you sure you want to discard changes?",
-              style: Theme.of(context).textTheme.bodyText1),
+              style: Theme.of(context).textTheme.bodyText2),
           actions: <Widget>[
             TextButton(
               child: Text("No",
@@ -180,10 +180,10 @@ class NoteDetailState extends State<NoteDetail> {
               borderRadius: BorderRadius.all(Radius.circular(10.0))),
           title: Text(
             "Title is empty!",
-            style: Theme.of(context).textTheme.bodyText2,
+            style: Theme.of(context).textTheme.bodyText1,
           ),
           content: Text('The title of the note cannot be empty.',
-              style: Theme.of(context).textTheme.bodyText1),
+              style: Theme.of(context).textTheme.bodyText2),
           actions: <Widget>[
             TextButton(
               child: Text("Okay",
@@ -210,10 +210,10 @@ class NoteDetailState extends State<NoteDetail> {
               borderRadius: BorderRadius.all(Radius.circular(10.0))),
           title: Text(
             "Delete Note?",
-            style: Theme.of(context).textTheme.bodyText2,
+            style: Theme.of(context).textTheme.bodyText1,
           ),
           content: Text("Are you sure you want to delete this note?",
-              style: Theme.of(context).textTheme.bodyText1),
+              style: Theme.of(context).textTheme.bodyText2),
           actions: <Widget>[
             TextButton(
               child: Text("No",
