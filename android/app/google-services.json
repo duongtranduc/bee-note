@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "744006858007",
+    "project_id": "bee-notes-9e72f",
+    "storage_bucket": "bee-notes-9e72f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:744006858007:android:688f0b41236b75342d7352",
+        "android_client_info": {
+          "package_name": "com.apolloplanet.beenotes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "744006858007-ecnfkq5k7vppjsegsq0bf61a8uk8o4ln.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXJXEly-fe5pqjGoqn1z-notVHahHPFm4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "744006858007-ecnfkq5k7vppjsegsq0bf61a8uk8o4ln.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

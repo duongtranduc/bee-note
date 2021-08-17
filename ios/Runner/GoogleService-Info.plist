@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>744006858007-cje2c0qrdvn9rj0ksc3qcn9gdmput7ci.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.744006858007-cje2c0qrdvn9rj0ksc3qcn9gdmput7ci</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAtRJhHDSwrDJ_ZNJYuMUPkUDMi1kfbaFo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>744006858007</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.apolloplanet.beenotes</string>
+	<key>PROJECT_ID</key>
+	<string>bee-notes-9e72f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>bee-notes-9e72f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:744006858007:ios:8d0a8cc4b05444802d7352</string>
+</dict>
+</plist>
