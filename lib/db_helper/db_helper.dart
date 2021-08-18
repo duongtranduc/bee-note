@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:sqflite/sqflite.dart';
 import 'dart:async';
-import 'package:path_provider/path_provider.dart';
+import 'package:path/path.dart' as p;
 import 'package:beenotes/modal_class/notes.dart';
 
 class DatabaseHelper {
@@ -36,12 +36,22 @@ class DatabaseHelper {
 
   Future<Database> initializeDatabase() async {
     // Get the directory path for both Android and iOS to store database.
-    Directory directory = await getApplicationDocumentsDirectory();
-    String path = directory.path + 'notes.db';
+    // Directory directory = await getApplicationDocumentsDirectory();
+    // String path = directory.path + 'notes.db';
 
     // Open/create the database at a given path
-    var notesDatabase =
-        await openDatabase(path, version: 1, onCreate: _createDb);
+    // var notesDatabase =
+    //    await openDatabase(path, version: 1, onCreate: _createDb);
+    // return notesDatabase;
+
+    //Get path of the directory for android and iOS.
+
+    var databasesPath = await getDatabasesPath();
+    String path = p.join(databasesPath, 'notes.db');
+
+    //open/create database at a given path
+    var notesDatabase = await openDatabase(path, version: 1, onCreate: _createDb);
+
     return notesDatabase;
   }
 
